@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Moebius';
+  src: url('Moebius-Bold.woff2') format('woff2'),
+      url('Moebius-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Moebius';
+  src: url('Moebius.woff2') format('woff2'),
+      url('Moebius.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Moebius Korea';
+  src: url('MoebiusKorea-Bold.woff2') format('woff2'),
+      url('MoebiusKorea-Bold.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Moebius Korea';
+  src: url('MoebiusKorea-Regular.woff2') format('woff2'),
+      url('MoebiusKorea-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Malgun-Gothic';
+  src: url('Malgun-Gothic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
