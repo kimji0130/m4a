@@ -1,0 +1,169 @@
+@import ("../css/font.css");
+
+.inner{position:relative; width:1200px; height:100%; margin:0 auto;}
+.fc_red{color:#e51937;}
+.fc_orange{color:#f37618;}
+
+/* 헤더 영역 */
+header{position:relative; height:80px; text-align: center; height:76px; box-sizing:border-box; border-bottom: 1px solid #ddd; border-top:4px solid #e51937;}
+header h1{float:left; height:63px; padding-top:10px; text-align: center;}
+header h1 a{display: block;  width:228px; height:63px;line-height:75px; background:url('../../images/skstory/Logo.png') no-repeat; color:transparent;}
+header .sns_spot {position: relative; float:right; padding-top:20px; vertical-align: middle;}
+header .sns_spot a{display: inline-block; height:40px; line-height: 80px; background:url('../../images/skstory/icons/sns_logo.png') no-repeat;} 
+header .sns_spot a:nth-of-type(1){width:40px; background-position: 0 0;}
+header .sns_spot a:nth-of-type(2){width:40px; background-position: 0 -40px;}
+header .sns_spot a:nth-of-type(3){width:40px; background-position: 0 -80px;}
+header .sns_spot a a:hover{opacity: 0.5;}
+
+/* 네비 메뉴 */
+
+nav.lnb{display:block; position:relative; text-align: center; width:100%; font-size: 0;}
+nav.lnb .drop_menu li{position:relative; display: inline-block; width:300px; height:58px; line-height:58px; font-size: 18px; font-family: 'Moebius Korea'; font-weight: bold;}
+nav.lnb .drop_menu > li a{position:absolute; left:0; width:300px; height:58px;}
+nav.lnb .drop_menu > li a:hover{color:#e51937;}
+nav.lnb .drop_menu > li > a::before {display:inline-block; content: ''; width:36px; margin-right:3px; vertical-align: middle;}
+nav.lnb .drop_menu > li:nth-of-type(1) > a::before,
+nav.lnb .drop_menu > li:nth-of-type(2) > a::before,
+nav.lnb .drop_menu > li:nth-of-type(3) > a::before,
+nav.lnb .drop_menu > li:nth-of-type(4) > a::before{background:url('../../mages/skstory/icons/gnb_logo.png') no-repeat;}
+nav.lnb .drop_menu > li:nth-of-type(1) > a::before,
+nav.lnb .drop_menu > li:nth-of-type(2) > a::before{margin-right:0;}
+nav.lnb .drop_menu > li:nth-of-type(1) > a::before{height:29px; background-position: -5px 0; }
+nav.lnb .drop_menu > li:nth-of-type(2) > a::before{height:26px; background-position: -3px -30px; }
+nav.lnb .drop_menu > li:nth-of-type(3) > a::before{margin-right:5px; height:27px; background-position: 0px -57px; }
+nav.lnb .drop_menu > li:nth-of-type(4) > a::before{margin-right:3px; height:31px; background-position: 0px -84px; }
+
+nav.lnb .drop_menu > li .drop_info {display:none; position:absolute; top:58px; width: 300px; height:auto; background:#e51937; z-index: 50;}
+nav.lnb .drop_menu > li .drop_info li{display: inherit; border: 1px solid #ed5e73;}
+nav.lnb .drop_menu li:hover .drop_info{display: block; color:#fff;}
+nav.lnb .drop_menu li:hover .drop_info a{ color:#fff;}
+nav.lnb .drop_menu li:hover .drop_info a:hover{color:#000;}
+
+/* swipe 비쥬얼 영역 */
+.visual { position: relative; width:100%; height: 340px;}
+.visual .swiper-container { width:100%; height:100%; overflow: hidden;}
+.visual .swiper-container .swiper-wrapper {font-size: 40px; font-weight: bold; color:#574942;}
+.visual .swiper-container .swiper-wrapper .swiper-slide {display: flex; flex-wrap: wrap; align-content: center; justify-content: center; width: 100%; background-size: cover;}
+.visual .swiper-container .swiper-slide .strong{font-size:75px; font-weight: bold; color:#fff;}
+.visual .swiper-container .swiper-wrapper .swiper-slide .txt {position: relative; padding:60px 0 40px 40px;  height:240px; line-height: 1.4;}
+.visual .swiper-container .swiper-wrapper .swiper-slide .txt a{position:absolute; left:40px; bottom:40px; font-size:40px; width:235px; height:51px; text-align: center; font-size:20px; line-height:48px; color:#fff; background: url('../../images/skstory/banner_btn.png') no-repeat;}
+.visual .swiper-container .swiper-slide .txt a::after{content:''; display: inline-block; width:10px; height:15px; line-height:20px; background: url('../../images/skstory/icons/arrow.png') no-repeat; margin-left:10px;}
+
+.visual .swiper-container .swiper-wrapper .swiper-slide.slide02 .txt a{position:absolute; left:40px; bottom:40px; font-size:40px; width:197px; height:51px; text-align: center; font-size:20px; line-height:48px; color:#6b8588; background: url('../../images/skstory/banner_blu_btn.png') no-repeat;}
+.visual .swiper-container .swiper-slide.slide02 .txt a::after{content:''; display: inline-block; width:10px; height:15px; line-height:20px; background: url('../../images/skstory/icons/blue_arrow.png') no-repeat; margin-left:10px;}
+
+
+.visual .swiper-container .swiper-slide.slide01 strong,.visual .swiper-container .swiper-slide.slide03 strong {position: absolute; top:111px; width:492px; height:119px; display: block; background:url('../../images/skstory/slide_1.png') no-repeat; }
+.visual .swiper-container .swiper-wrapper .swiper-slide.slide02 {font-size: 36px; font-weight: bold; color:#fff;}
+.visual .swiper-container .swiper-slide.slide02 strong{font-size:75px; font-weight: bold; color:#fff;}
+
+.visual .swiper-pagination{left: 50% !important; transform: translate(-50%, -50%); padding: 0 20px 0 0; border-radius: 40px;background-color: #fff;}
+.visual .swiper-horizontal>.swiper-pagination-bullets, .visual .swiper-pagination-bullets.swiper-pagination-horizontal, .visual .swiper-pagination-custom,.visual .swiper-pagination-fraction{ width:80px !important; height: 30px;}
+.visual .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .visual .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{ margin: 9px var(--swiper-pagination-bullet-horizontal-gap,4px) !important;}
+.visual .swiper-pagination-bullet{width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,12px)); height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,12px));  background: var(--swiper-pagination-bullet-inactive-color,#f37618) !important; opacity: 1 !important;}
+.visual .swiper-pagination-bullet-active { opacity: var(--swiper-pagination-bullet-opacity, 1); background: var(--swiper-pagination-bullet-active-color,#e51937) !important;}
+
+.wrap-autoplay-control {position: absolute; z-index: 10; bottom: 29px; left: calc(50% + 37px); transform: translateX(-50%);}
+.wrap-autoplay-control button {display: block; width: 15px; height: 17px; border: 0; background-color:#fff; cursor: pointer; }
+.wrap-autoplay-control button:before {display: block; content: ''; position: absolute; }
+.wrap-autoplay-control button[aria-pressed="false"]:before {bottom: 4px; right:0; width: 15px; height: 12px; background: url('../../images/skstory/icons/stop.png') no-repeat; box-sizing: border-box;}
+.wrap-autoplay-control button[aria-pressed="true"]:before {bottom: 5px; right:0; width: 15px; height: 12px; background: url('../../images/skstory/icons/play.png') no-repeat;}
+
+/* + 버튼*/
+.more_btn {width:20px; height:20px; background:url('../../images/skstory/icons/plus.png') no-repeat;}
+.more_btn.header_plus{background-position: 0 0;}
+.more_btn.item_plus{ background-position: 0 -80px;}
+.banner_item li a .more_btn.banner_plus{position:absolute; display: inline-block; bottom:0; left:124px; width: 32px; height:20px; margin: 20px 0 20px 10px; text-align: center; z-index: 70; background:url('../../images/skstory/icons/plus.png')no-repeat;}
+.banner_item li a .more_btn.banner_plus.ty1{background-position:0 -80px;}
+.banner_item li a .more_btn.banner_plus.ty2{background-position:0 -60px;}
+.banner_item li a .more_btn.banner_plus.ty3{background-position:0 -40px;}
+.banner_item li a .more_btn.banner_plus.ty4{background-position:0 -20px;}
+
+/* 콘텐츠 영역 */
+.contents{position:relative; display:flex; width: 100%; padding: 20px 0 40px 0; overflow: hidden;}
+.contents h2{position:relative; margin: 20px 0; font-size: 20px; font-weight: bold; font-family: 'Moebius';}
+.contents h2:nth-of-type(2){margin:30px 0 20px 0;}
+.contents h2 .more_btn.header_plus{position: absolute; right:0; top: 4px; display:inline-block; vertical-align: sub; color: transparent;}
+
+.contents .cont_left {float:left; width:900px; height:auto; margin-right:60px; overflow: hidden;}
+.cont_left .cont_item{font-size: 0;}
+.cont_left .cont_item > div.img{width:290px;}
+.cont_left .cont_item li+li{margin-left:15px;}
+.cont_left .cont_item li{position: relative; display:inline-block; width:290px; height:290px; vertical-align: middle; transition: all 0.5s; cursor: pointer;}
+.cont_left .cont_item li p{padding:18px 15px 0 0; text-align:left; color:#000; font-size: 16px; line-height: 24px; font-weight: bold;}
+.cont_left .cont_item li .b_cover{display: none; position: relative;}
+.cont_left .cont_item li:hover .b_cover{position:absolute; top:0; width:290px; height:290px; display:block; background: #e51937; z-index: 5; text-align:center; text-decoration: underline; color:#fff;}
+.cont_left .cont_item li:hover .b_cover i.sk_w_happywold{display:block; width:52px; height:59px; margin: 52px auto 18px; background:url('../../images/skstory/icons/i_happyworld.png') no-repeat;}
+.cont_left .cont_item li:hover .b_cover p{padding:0; text-align: center; color:#fff; font-size: 16px; font-weight: bold; line-height:24px; }
+.cont_left .cont_item li:hover .b_cover p.date{font-size: 12px; color:#fff; font-weight: 400; line-height:24px;}
+.cont_left .cont_item li:hover .b_cover::after{position:absolute; right:0; bottom:0; display: block; content: ''; width: 0; height: 0; border-bottom:30px solid #f37618;  border-top: 30px solid transparent; border-left: 30px solid transparent; border-right: 30px solid #f37618;}
+.cont_left .cont_item li:hover .b_cover .more_btn.item_plus{position:absolute; right:10px; bottom:10px; display:block; z-index: 100;}
+
+.contents .cont_right {margin-left:auto; height:auto; overflow:hidden;}
+.cont_right .creat_play h2{position:relative; vertical-align: middle;}
+.cont_right .creat_play .c_tuber{ width:240px; height:240px; background-color: #fff;}
+.cont_right .creat_play .c_tuber .swiper-slide{display: flex; text-align:center; justify-content: center; align-items: center;}
+.cont_right .creat_play .c_tuber .creat_play_cover{position:absolute; right:0; bottom:0; display:block; z-index: 60; width:60px; height:60px; background:url('../../images/skstory/icons/create_play_btn.png') no-repeat; cursor: pointer;}
+.cont_right .creat_play .swiper-pagination {text-align: right; transform: translate(0%,-1815%);}
+.cont_right .creat_play .swiper-pagination-bullet{width: 10px; height:10px; background: #f37618 ; opacity: 1;}
+.cont_right .creat_play .swiper-pagination-bullet-active {background:#e51937;}
+
+ .cont_right .search_box{margin:40px 0; position: relative; width: 240px; height: 40px; box-sizing: border-box; border:1px solid #ddd;}
+.search_box input{font: 16px; color: #fff; height: 100%; width: 100%;}
+.search_box input[type=search]{padding-right:40px; height:38px !important; text-indent: 14px; border:none;}
+.search_box input::placeholder{color:#333;}
+.search_box::placeholder {color: #fff; opacity: 0.7;}
+.search_box button {position:absolute; top:0; right:0; margin: 0 10px; vertical-align: middle; cursor: pointer; color: transparent; background:inherit; width: 26px; height: 38px;}
+.search_box button i.search_btn{clear: both; display:block; width:26px; height:36px; background:url('../../images/skstory/icons/search.png') no-repeat right;}
+
+.cont_right .container{position:relative; width: 240px; margin: 0 auto;}
+.container ul.tabs{margin: 0px; padding: 0px; text-align: center;}
+.container ul.tabs li{background: none; color: #666; display: inline-block; width:87px; padding: 0 15px 10px 15px; cursor: pointer; font-size:18px; font-weight: bold; font-family: 'Moebius';}
+.container ul.tabs li.current{background: #fff; border-bottom: 2px solid #e51937; color: #e51937;}
+.container .tab-content{display: none;	background: #fff; padding: 17px 4px 17px 0; font-size: 14px; width:240px; height: 230px;}
+.container .tab-content ul li{width:240px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.container .tab-content ul li+li{padding-top:17px;}
+.container .tab-content.current{display: inherit;}
+
+/*sns 배너영역*/
+.banner{ padding:40px 0; }
+.banner h2{text-align: center; margin-bottom:36px;}
+.banner h2 span{font-size:34px; }
+
+.banner .banner_item {font-size:0;}
+.banner_item li{position: relative; display:inline-block; margin:0 13px; text-align: center; width:280px; height:360px;}
+.banner_item li:first-child{margin-left:0;}
+.banner_item li:last-child{margin-right:0;}
+.banner_item li a {position:relative; display: block; padding: 300px 0 0; width:280px; height:360px; text-align: center; box-sizing: border-box;}
+.banner_item li:nth-child(1) { background: url('../../images/skstory/cotents/s_box_img01.png') no-repeat;}
+.banner_item li:nth-child(2) { background: url('../../images/skstory/cotents/s_box_img02.png') no-repeat;}
+.banner_item li:nth-child(3) { background: url('../../images/skstory/cotents/s_box_img03.png') no-repeat;}
+.banner_item li:nth-child(4) { background: url('../../images/skstory/cotents/s_box_img04.png') no-repeat;}
+.banner_item li a .more_btn.banner_plus{position:absolute; display: inline-block; bottom:0; left:124px; width: 32px; height:20px; margin: 20px 0 20px 10px; text-align: center; z-index: 70; background:url('../../images/skstory/icons/plus.png')no-repeat;}
+.banner_item li a .more_btn.banner_plus.ty1{background-position:0 -80px;}
+.banner_item li a .more_btn.banner_plus.ty2{background-position:0 -60px;}
+.banner_item li a .more_btn.banner_plus.ty3{background-position:0 -40px;}
+.banner_item li a .more_btn.banner_plus.ty4{background-position:0 -20px;}
+
+/*푸터영역*/
+footer{position : static; width: inherit; height:120px; margin-top:40px; border-top:1px solid #ddd;}
+footer .top { background: #fff;}
+footer .top .top_nav {position:relative; margin: 0 auto; padding: 11px 0;}
+footer .top .top_nav ul { float: left; width: calc(100% - 160px); }
+footer .top .top_nav ul li { float: left; position: relative; width: calc(100% / 6); }
+footer .top .top_nav ul li a { color:#666; font-size: 14px; font-family:'Moebius Korea'; font-weight: bold; line-height: 45px;}
+footer .top .top_nav ul li:last-child:after { display: none;}
+footer .top .top_nav .f_site { float: right;}
+footer .top .top_nav .f_site select{ padding: 0 0 0 10px; margin:8px 0 10px 0px; width: 160px; height:30px; font-size:12px;  color: #333; letter-spacing:0; box-sizing: border-box;  vertical-align:3px; font-family:'Malgun-Gothic'; appearance:none; background:url('../../images/skstory/icons/select_arrow.png') no-repeat right 9px center;}
+footer .top .top_nav .f_site select option{background:#fff !important; color:#333 
+  !important;}
+footer .btm { padding: 10px 0 30px; background: #fff; text-align: center;}
+footer .btm address {font-size: 12px; color:#000;}
+
+/*swipe images*/
+.visual .swiper-container .swiper-wrapper .swiper-slide.slide01 { background:url('../../images/skstory/banner1.png') no-repeat center; width:100%; height:340px; background-size:cover;}
+.visual .swiper-container .swiper-wrapper .swiper-slide.slide02 { background:url('../../images/skstory/banner2.png') no-repeat center; width:100%; height:340px; background-size:cover;}
+.visual .swiper-container .swiper-wrapper .swiper-slide.slide03 { background:url('../../images/skstory/banner1.png') no-repeat center; width:100%; height:340px; background-size:cover;}
+.visual .swiper-container .swiper-wrapper .swiper-slide.slide04 { background:url('../../images/skstory/banner1.png') no-repeat center; width:100%; height:340px; background-size:cover;}
+.visual .swiper-container .swiper-wrapper .swiper-slide.slide05 { background:url('../../images/skstory/banner1.png') no-repeat center; width:100%; height:340px; background-size:cover;}
+
