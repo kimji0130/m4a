@@ -6,9 +6,9 @@
 /* Reset */
 html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,menu,nav,section,article,aside,
 dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0 auto;padding:0;}
-html, body{width:100%; border-top:4px solid #e51937; line-height:1;}
-html{-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
-body{width:100%; background:#fff; min-width:320px; -webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;}
+html, body{width:100%; line-height:1;}
+html{-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0); overflow: scroll;}
+body{background:#fff; min-width:1280px; -webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;}
 body,input,select,textarea,button {border:none;font-size:14px; font-family:'Lato', sans-serif, 'Moebius','Moebius Korea','Malgun-Gothic';color:#666;}
 ul,ol,li{list-style:none;}
 table{width:100%;border-spacing:0;border-collapse:collapse;}

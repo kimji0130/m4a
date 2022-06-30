@@ -1,13 +1,11 @@
 @import url("../css/font.css");
-body{min-width:1280px;}
 
+.inner{position:relative; width:1200px; height:100%; margin:0 auto;}
 .fc_red{color:#e51937;}
 .fc_orange{color:#f37618;}
 
-.inner{position:relative; width:1200px; height:100%; margin:0 auto;}
-
 /* 헤더 영역 */
-header{position:relative; height:80px; text-align: center; height:76px; box-sizing:border-box; border-bottom: 1px solid #ddd;}
+header{position:relative; height:80px; text-align: center; height:76px; box-sizing:border-box; border-bottom: 1px solid #ddd; border-top:4px solid #e51937;}
 header h1{float:left; height:63px; padding-top:10px; text-align: center;}
 header h1 a{display: block;  width:228px; height:63px;line-height:75px; background:url('../images/Logo.png') no-repeat; color:transparent;}
 header .sns_spot {position: relative; float:right; padding-top:20px; vertical-align: middle;}
@@ -94,9 +92,9 @@ nav.lnb .drop_menu li:hover .drop_info a:hover{color:#000;}
 .cont_left .cont_item li{position: relative; display:inline-block; width:290px; height:290px; vertical-align: middle; transition: all 0.5s; cursor: pointer;}
 .cont_left .cont_item li p{padding:18px 15px 0 0; text-align:left; color:#000; font-size: 16px; line-height: 24px; font-weight: bold;}
 .cont_left .cont_item li .b_cover{display: none; position: relative;}
-.cont_left .cont_item li:hover .b_cover{position:absolute; top:0; width:290px; height:290px; display:block; background: #e51937; z-index: 5; text-align:center;}
+.cont_left .cont_item li:hover .b_cover{position:absolute; top:0; width:290px; height:290px; display:block; background: #e51937; z-index: 5; text-align:center; text-decoration: underline; color:#fff;}
 .cont_left .cont_item li:hover .b_cover i.sk_w_happywold{display:block; width:52px; height:59px; margin: 52px auto 18px; background:url(../images/icons/i_happyworld.png) no-repeat;}
-.cont_left .cont_item li:hover .b_cover p{padding:0; text-align: center; color:#fff; font-size: 16px; font-weight: bold; line-height:24px;}
+.cont_left .cont_item li:hover .b_cover p{padding:0; text-align: center; color:#fff; font-size: 16px; font-weight: bold; line-height:24px; }
 .cont_left .cont_item li:hover .b_cover p.date{font-size: 12px; color:#fff; font-weight: 400; line-height:24px;}
 .cont_left .cont_item li:hover .b_cover::after{position:absolute; right:0; bottom:0; display: block; content: ''; width: 0; height: 0; border-bottom:30px solid #f37618;  border-top: 30px solid transparent; border-left: 30px solid transparent; border-right: 30px solid #f37618;}
 .cont_left .cont_item li:hover .b_cover .more_btn.item_plus{position:absolute; right:10px; bottom:10px; display:block; z-index: 100;}
@@ -112,7 +110,7 @@ nav.lnb .drop_menu li:hover .drop_info a:hover{color:#000;}
 
  .cont_right .search_box{margin:40px 0; position: relative; width: 240px; height: 40px; box-sizing: border-box; border:1px solid #ddd;}
 .search_box input{font: 16px; color: #fff; height: 100%; width: 100%;}
-.search_box input[type=search]{padding-right:40px; height:38px !important; text-indent: 14px;}
+.search_box input[type=search]{padding-right:40px; height:38px !important; text-indent: 14px; border:none;}
 .search_box input::placeholder{color:#333;}
 .search_box::placeholder {color: #fff; opacity: 0.7;}
 .search_box button {position:absolute; top:0; right:0; margin: 0 10px; vertical-align: middle; cursor: pointer; color: transparent; background:inherit; width: 26px; height: 38px;}
@@ -148,9 +146,9 @@ nav.lnb .drop_menu li:hover .drop_info a:hover{color:#000;}
 .banner_item li a .more_btn.banner_plus.ty4{background-position:0 -20px;}
 
 /*푸터영역*/
-footer{height:120px; margin-top:40px;}
-footer .top { background: #fff; border-top:1px solid #ddd;}
-footer .top .top_nav {position:relative; width: 1200px; margin: 0 auto; padding: 11px 0;}
+footer{position : static; width: inherit; height:120px; margin-top:40px; border-top:1px solid #ddd;}
+footer .top { background: #fff;}
+footer .top .top_nav {position:relative; margin: 0 auto; padding: 11px 0;}
 footer .top .top_nav ul { float: left; width: calc(100% - 160px); }
 footer .top .top_nav ul li { float: left; position: relative; width: calc(100% / 6); }
 footer .top .top_nav ul li a { color:#666; font-size: 14px; font-family:'Moebius Korea'; font-weight: bold; line-height: 45px;}
