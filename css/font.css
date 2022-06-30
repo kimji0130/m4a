@@ -50,43 +50,43 @@
 /*------------------- 오설록 ---------------------*/
 
 /* fonts - 아리따 돋움 */
+/*출처: https://d2.naver.com/helloworld/4969726*/
 @font-face {
-  font-family: 'ad';
+  font-family:'aritadt';
+  src: url('../font/Arita-dotum-Thin.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 200;
-  src:url(/kr/ko/static_cdj/fonts/AritaDotumThin.woff2) format('woff2'),
-  url(/kr/ko/static_cdj/fonts/AritaDotumThin.woff) format('woff')
+  font-display: fallback;
 }
 
 @font-face {
-  font-family: 'ad';
+  font-family:'aritadl';
+  src: url('../font/Arita-dotum-Light.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 300;
-  src:url(/kr/ko/static_cdj/fonts/AritaDotumLight.woff2) format('woff2'),
-  url(/kr/ko/static_cdj/fonts/AritaDotumLight.woff) format('woff')
+  font-display: fallback;
 }
 
 @font-face {
-  font-family: 'ad';
+  font-family:'aritadm';
+  src: url('../font/Arita-dotum-Medium.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src:url(/kr/ko/static_cdj/fonts/AritaDotumMedium.woff2) format('woff2'),
-  url(/kr/ko/static_cdj/fonts/AritaDotumMedium.woff) format('woff')
+  font-display: fallback;
 }
 
 @font-face {
-  font-family: 'ad';
+  font-family:'aritadsb';
+  src: url('../font/Arita-dotum-SemiBold.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 500;
-  src:url(../font/AritaDotumSemiBold.woff2) format('woff2'),
-  url(../font/AritaDotumSemiBold.woff) format('woff')
+  font-display: fallback;
 }
 
 @font-face {
-  font-family: 'ad';
+  font-family:'aritadb';
+  src: url('../font/Arita-dotum-Bold.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 600;
-  src:url(/kr/ko/static_cdj/fonts/AritaDotumBold.woff2) format('woff2'),
-  url(/kr/ko/static_cdj/fonts/AritaDotumBold.woff) format('woff')
+  font-display: fallback;
 }
-
